@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>MHRダメージ計算テストバージョン</title>
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/weaponselect.js"></script>
+    </head>
+    <body>
+        <header>
+           <a href="index.html" ><img class="logo" src ="images/mhr_logo.png"></a>
+            <nav>
+                <ul class="global-nav">
+                    <li><a href="damage.html">ダメージ計算</a></li>
+                    <li><a href="simulation.html">スキルシミュレーター</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>ダメージ計算ツール</h1>
+            <p>計算用<br>とりあえず現状はテスト版</p>
+            <section class="damage">
+            <input id="damageSim01" type="radio" name="damageSim" checked="checked">
+            <label class="tabLabel" for="damageSim01">ダメージシミュレーター</label>
+            <div class="content">
+                <table>
+                    <caption>テスト用に表記</caption>
+                    <tr>
+                    <th colspan="2" scope="colgroup">武器</th>
+                    <th colspan="1" scope="colgroup">攻撃</th>
+                    <th colspan="2" scope="colgroup">属性</th>
+                    <th colspan="2" scope="colgroup">乗算補正</th>
+                    <th colspan="2" scope="colgroup">加算補正</th>
+                    <th colspan="2" scope="colgroup">強化補正</th>
+                    <tr>
+                        <td>
+                            <!-- 武器の種類の選択肢 -->
+                            <label for="weapongenre-select"></label>
+                            <select name="weapongenre" id="weapongenre-select">
+                                <option disabled selected>武器を選択</option>
+                                <option value="taiken">大剣</option>
+                                <option value="tachi">太刀</option>
+                                <option value="katateken">片手剣</option>
+                                <option value="souken">双剣</option>
+                                <option value="lance">ランス</option>
+                                <option value="gunlance">ガンランス</option>
+                                <option value="hammer">ハンマー</option>
+                                <option value="syuryoubue">狩猟笛</option>
+                                <option value="slashaxe">スラッシュアックス</option>
+                                <option value="chageaxe">チャージアックス</option>
+                                <option value="mushi">操虫棍</option>
+                                <option value="light">ライトボウガン</option>
+                                <option value="heavy">ヘビィボウガン</option>
+                                <option value="bow">弓</option>
+                              </select>
+                        </td>
+                        <td>
+                            <a href="#weaponModal" ><img class="weaponIcon" src ="images/weapon_icon_tachi.png"></a>
+                            <div class="modal-wrapper" id="weaponModal">
+                                <a href="#!" class="modal-overlay"></a>
+                               <div class="modal-window">
+                                   <div class="modal-content">
+                                       <p class="modal_title">武器を選択</p>
+                                       <table>
+                                           <tr>
+                                               <th>━</th>
+                                               <th>━</th>
+                                               <th>━</th>
+                                               <th>━</th>
+                                               <th>━</th>
+                                               <th>━</th>
+                                               <th>━</th>
+                                           </tr>
+                                           <tr>
+                                               <td>　</td>
+                                               <td>┗</td>
+                                               <td><a href="#weaponModal" ><img class="weaponIcon" src ="images/weapon_icon_tachi.png"></a></td>
+                                               <td>　</td>
+                                               <td>┗</td>
+                                               <td><a href="#weaponModal" ><img class="weaponIcon" src ="images/weapon_icon_tachi.png"></a></td>
+                                               <td>　</td>
+                                           </tr>
+                                       </table>
+                                       
+                                   </div>
+                                   <a href="#!" class="modal-close"><i class="far fa-times-circle"></i></a>                                
+                            </div>
+                            </div>
+                        </td>
+                        <td>999</td>
+                        <td>雷</td>
+                        <td>120</td>
+                        <td>火事場</td>
+                        <td>1.2倍</td>
+                        <td>挑戦者</td>
+                        <td>+16</td>
+                        <td>超会心</td>
+                        <td>1.4倍</td>
+                    </tr>
+                </table>
+    
+            </div>
+            <input id="damageSim02" type="radio" name="damageSim">
+            <label class="tabLabel" for="damageSim02">スキルシミュレーター</label>
+            <div class="content">
+                <p>
+                    test2<br>
+                    test2<br>
+                    test2<br>
+                    test2<br>
+                    test2<br>
+
+                </p>
+            </div>
+        </section>
+
+        </main>
+        <footer>
+            <small>(C)CAPCOM,</small>
+
+        </footer>
+
+    </body>
+</html>
